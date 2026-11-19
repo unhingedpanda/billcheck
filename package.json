@@ -1,10 +1,25 @@
 {
   "name": "billcheck",
   "version": "0.1.0",
-  "private": true,
   "description": "Local LEDES 1998B invoice checker, parser and builder, with related LOC error codes",
   "type": "module",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/unhingedpanda/billcheck.git"
+  },
+  "homepage": "https://github.com/unhingedpanda/billcheck#readme",
+  "bugs": {
+    "url": "https://github.com/unhingedpanda/billcheck/issues"
+  },
+  "keywords": [
+    "ledes",
+    "ledes-1998b",
+    "e-billing",
+    "legal-billing",
+    "invoice",
+    "validator"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
@@ -36,6 +51,6 @@
     "typescript": "6.0.3"
   },
   "bin": {
-    "billcheck": "./bin/billcheck.mjs"
+    "billcheck": "bin/billcheck.mjs"
   }
 }

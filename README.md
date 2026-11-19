@@ -4,7 +4,7 @@ A local LEDES 1998B parser, builder and invoice checker, written in TypeScript w
 
 billcheck reads invoice files, checks field formats and exact arithmetic, and explains problems. The library and CLI also accept explicit client code lists. Client guidelines and live portal acceptance remain outside this version. A pass covers only implemented checks. Parsing or building alone does not validate billing values.
 
-The package is named `billcheck`. It is private and unpublished.
+Install with `npm install billcheck`. The CLI command is `billcheck`.
 
 ## Run locally
 
