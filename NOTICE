@@ -1,0 +1,7 @@
+billcheck is released under the MIT License in LICENSE, with these exclusions.
+
+Third-party LOC reference files and derived fixtures are excluded from the
+MIT License. See docs/sources/README.md for provenance.
+
+Lato font files in web/assets/ are excluded from the MIT License. They use the
+SIL Open Font License. See web/assets/OFL.txt for the full license.

@@ -87,7 +87,7 @@ LEDES and the LEDES 1998B format are maintained by the [LEDES Oversight Committe
 - the 51 identifiers from the revised timekeeper classification reference, June 2023
 - the official 1998B sample file, as a test fixture
 
-The identifiers in the code are used under that permission. The sample file, its derivative and the LOC workbooks keep their LOC copyright and are not covered by the MIT licence. billcheck is an independent project. The LOC does not endorse it.
+The identifiers in the code are used under that permission. The sample file, its derivative and the LOC workbooks keep their LOC copyright and are not covered by the MIT licence. [NOTICE](NOTICE) lists the files the MIT licence does not cover. billcheck is an independent project. The LOC does not endorse it.
 
 ### Field formats and reference classifications
 

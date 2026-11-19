@@ -16,6 +16,7 @@
     "dist",
     "README.md",
     "LICENSE",
+    "NOTICE",
     "bin"
   ],
   "scripts": {

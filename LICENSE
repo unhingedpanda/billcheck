@@ -20,8 +20,3 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Third-party LOC reference files and derived fixtures are excluded from this
-license. See docs/sources/README.md for provenance.
-
-Lato font files in web/assets/ are excluded from this license. They use the
-SIL Open Font License. See web/assets/OFL.txt for the full license.
