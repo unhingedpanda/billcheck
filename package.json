@@ -1,0 +1,40 @@
+{
+  "name": "billcheck",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local LEDES 1998B invoice checker, parser and builder, with related LOC error codes",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "bin"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test tests/*.test.mjs tests/cli/*.test.mjs",
+    "test:bun": "npm run build && bun test tests/*.test.mjs",
+    "test:deno": "npm run build && deno test --allow-read tests/*.test.mjs",
+    "prepack": "npm run build",
+    "test:isolate": "npm run build && node --experimental-vm-modules scripts/check-isolate.mjs",
+    "billcheck": "npm run build --silent && node bin/billcheck.mjs",
+    "web": "npm run build && node scripts/serve-web.mjs",
+    "test:web": "playwright test",
+    "test:server": "npm run build && node --test tests/server/*.test.mjs"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1",
+    "typescript": "6.0.3"
+  },
+  "bin": {
+    "billcheck": "./bin/billcheck.mjs"
+  }
+}

@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>billcheck — Local invoice checker</title>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" type="module"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to checker</a>
+  <header class="masthead">
+    <div class="brand"><img src="/icon.svg" width="30" height="30" alt=""><span>billcheck</span></div>
+    <span class="local-label"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Local preview</span>
+  </header>
+  <main id="main">
+    <div class="page-heading"><h1>Check an invoice</h1><p>Find format and amount issues in a LEDES 1998B file.</p></div>
+    <div class="workspace">
+      <aside class="input-pane" aria-label="Invoice selection">
+        <h2>Your invoice</h2>
+        <div id="drop-zone" class="drop-zone">
+          <svg class="file-icon" viewBox="0 0 40 44" aria-hidden="true"><path d="M9 3h15l9 9v29H9zM24 3v10h9M15 22h12M15 28h12M15 34h7"/></svg>
+          <p class="drop-title">Drop your file here</p>
+          <p class="drop-help">One LEDES 1998B file</p>
+          <button id="choose" class="primary" type="button">Choose a file</button>
+          <input id="file-input" type="file" aria-label="Invoice file" hidden>
+          <p class="file-limit">Up to 5 MB and 10,000 records</p>
+        </div>
+        <div id="selection" class="selection" hidden>
+          <div class="selected-file"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2h8l5 5v15H6zM14 2v6h5M9 13h7M9 17h5"/></svg><div><strong id="file-name"></strong><p id="file-meta"></p><span id="sample-label" class="sample-label" hidden>Synthetic example</span></div></div>
+          <button type="button" id="clear" class="text-button">Clear file</button>
+        </div>
+        <p id="file-error" class="inline-error" role="alert" hidden></p>
+        <details class="settings">
+          <summary>Check settings</summary>
+          <div class="settings-content"><label for="tolerance">Amount tolerance</label><input id="tolerance" type="text" inputmode="decimal" value="0" aria-describedby="tolerance-help tolerance-error" autocomplete="off" spellcheck="false"><p id="tolerance-help">Default: 0. A smaller difference becomes a warning when it falls within your tolerance.</p><p id="tolerance-error" class="inline-error" hidden>Enter a nonnegative decimal with up to four decimal places.</p></div>
+        </details>
+        <button id="check" class="primary check-button" type="button" hidden>Check invoice</button>
+        <div class="privacy-note"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6zM8 12l3 3 5-6"/></svg><p><strong>Your file stays in this tab.</strong>We don’t upload it or save a history. Your original file stays unchanged.</p></div>
+      </aside>
+      <section class="report" aria-label="Invoice review" aria-busy="false">
+        <div class="report-topline"><span>Invoice review</span><span>LEDES 1998B</span></div>
+        <div id="empty" class="empty-state">
+          <div class="review-symbol" aria-hidden="true"><svg viewBox="0 0 64 64"><path d="M17 6h22l10 10v42H17zM38 6v12h11M24 28h18M24 35h11M24 42h8"/><path d="m36 45 5 5 11-13"/></svg></div>
+          <h2>Your review starts here</h2>
+          <p>Choose an invoice to see what needs attention, where to find it and how to correct it.</p>
+          <div class="examples"><p>No file handy? Explore a synthetic example.</p><button id="example-bad" class="secondary" type="button">Try a file with issues</button><button id="example-good" class="text-button" type="button">Try a passing file</button></div>
+        </div>
+        <div id="pending" class="pending-state" hidden><span id="pending-icon" class="status-icon" aria-hidden="true"></span><h2 id="pending-title">Checking your invoice…</h2><p id="pending-copy">You can clear or replace the file at any time.</p></div>
+        <div id="results" hidden>
+          <div id="result-summary" class="result-summary" tabindex="-1"><span id="status-icon" class="status-icon" aria-hidden="true"></span><div><h2 id="result-title"></h2><p id="result-counts"></p></div></div>
+          <p id="result-note" class="result-note"></p>
+          <div class="result-toolbar"><div class="filters" role="group" aria-label="Filter findings"><button type="button" data-filter="all" aria-pressed="true">All <span id="all-count">0</span></button><button type="button" data-filter="error" aria-pressed="false">Errors <span id="error-count">0</span></button><button type="button" data-filter="warning" aria-pressed="false">Warnings <span id="warning-count">0</span></button></div><button id="download" class="text-button download" type="button"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg>Download report</button></div>
+          <div id="findings"></div>
+          <div id="pagination" class="pagination" hidden><span id="page-label"></span><div><button id="previous" class="secondary" type="button" aria-label="Previous page">Previous</button><button id="next" class="secondary" type="button" aria-label="Next page">Next</button></div></div>
+        </div>
+        <div class="coverage"><details><summary>What this check covers</summary><div><p>Checks include file structure, required values, dates, duplicate line IDs, line amounts and invoice totals.</p><p>Field lengths, timekeeper name format and reference classifications are checked. Ambiguous description sizes and numeric widths produce warnings.</p><p>Client guidelines and client-specific code lists are not checked here. Client code lists are available through the local CLI and library.</p><p>A result with no issues does not guarantee portal acceptance. Review the receiving client’s requirements before submission.</p></div></details></div>
+      </section>
+    </div>
+    <footer><span>Built for the review before submission.</span><span>1998B only for this preview</span></footer>
+  </main>
+  <p id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
+  <noscript><p class="noscript">Enable JavaScript to check a file locally in your browser.</p></noscript>
+</body>
+</html>

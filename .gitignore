@@ -1,0 +1,13 @@
+node_modules/
+dist/
+.superpowers/
+docs/sources/*.xls
+docs/sources/*.xlsx
+docs/sources/*.html
+docs/sources/spec-extract.txt
+*.tgz
+test-results/
+playwright-report/
+.impeccable/review/
+.impeccable/questions/
+.impeccable/hook.cache.json

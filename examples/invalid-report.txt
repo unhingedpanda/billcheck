@@ -1,0 +1,16 @@
+FAIL: 1 records, 1 invoices, 2 errors, 0 warnings.
+
+ERROR INVALID_DATE — record 1, line 3, column 1, INVOICE_DATE
+This value is not a real calendar date in the required format.
+Fix: Use YYYYMMDD with a valid year, month and day.
+Related LOC code: [402-0036]
+Source: https://ledes.org/wp-content/uploads/2014/08/Ledes-1998B-Format-Rev-7-2014.xls
+
+ERROR INVOICE_TOTAL_MISMATCH — record 1, line 3, column 28, INVOICE_TOTAL
+The first invoice total differs from its line-total sum beyond the configured tolerance.
+Fix: Check missing lines, duplicates and adjustments before changing the invoice total.
+Expected: 12.34. Actual: 99.
+Related LOC code: [459-0041]
+Source: https://ledes.org/wp-content/uploads/2014/08/Ledes-1998B-Format-Rev-7-2014.xls
+
+A pass covers only implemented 1998B checks. Client rules and portal acceptance need separate verification.

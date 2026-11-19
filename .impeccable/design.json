@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-01T14:19:19.307273+00:00",
+  "title": "Design System: billcheck",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Mineral White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00338 145.55)",
+          "oklch(26.43% 0.00338 145.55)",
+          "oklch(37.86% 0.00338 145.55)",
+          "oklch(49.29% 0.00338 145.55)",
+          "oklch(60.71% 0.00338 145.55)",
+          "oklch(72.14% 0.00338 145.55)",
+          "oklch(83.57% 0.00338 145.55)",
+          "oklch(95.00% 0.00338 145.55)"
+        ]
+      },
+      "surface": {
+        "role": "neutral",
+        "displayName": "White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Graphite",
+        "tonalRamp": [
+          "oklch(15.00% 0.02352 164.67)",
+          "oklch(26.43% 0.02352 164.67)",
+          "oklch(37.86% 0.02352 164.67)",
+          "oklch(49.29% 0.02352 164.67)",
+          "oklch(60.71% 0.02352 164.67)",
+          "oklch(72.14% 0.02352 164.67)",
+          "oklch(83.57% 0.02352 164.67)",
+          "oklch(95.00% 0.02352 164.67)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Muted Green Gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.02293 159.17)",
+          "oklch(26.43% 0.02293 159.17)",
+          "oklch(37.86% 0.02293 159.17)",
+          "oklch(49.29% 0.02293 159.17)",
+          "oklch(60.71% 0.02293 159.17)",
+          "oklch(72.14% 0.02293 159.17)",
+          "oklch(83.57% 0.02293 159.17)",
+          "oklch(95.00% 0.02293 159.17)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Pale Rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.01179 153.65)",
+          "oklch(26.43% 0.01179 153.65)",
+          "oklch(37.86% 0.01179 153.65)",
+          "oklch(49.29% 0.01179 153.65)",
+          "oklch(60.71% 0.01179 153.65)",
+          "oklch(72.14% 0.01179 153.65)",
+          "oklch(83.57% 0.01179 153.65)",
+          "oklch(95.00% 0.01179 153.65)"
+        ]
+      },
+      "green": {
+        "role": "primary",
+        "displayName": "Evergreen",
+        "tonalRamp": [
+          "oklch(15.00% 0.07187 159.80)",
+          "oklch(26.43% 0.07187 159.80)",
+          "oklch(37.86% 0.07187 159.80)",
+          "oklch(49.29% 0.07187 159.80)",
+          "oklch(60.71% 0.07187 159.80)",
+          "oklch(72.14% 0.07187 159.80)",
+          "oklch(83.57% 0.07187 159.80)",
+          "oklch(95.00% 0.07187 159.80)"
+        ]
+      },
+      "green-hover": {
+        "role": "primary",
+        "displayName": "Deep Evergreen",
+        "tonalRamp": [
+          "oklch(15.00% 0.06240 159.16)",
+          "oklch(26.43% 0.06240 159.16)",
+          "oklch(37.86% 0.06240 159.16)",
+          "oklch(49.29% 0.06240 159.16)",
+          "oklch(60.71% 0.06240 159.16)",
+          "oklch(72.14% 0.06240 159.16)",
+          "oklch(83.57% 0.06240 159.16)",
+          "oklch(95.00% 0.06240 159.16)"
+        ]
+      },
+      "green-tint": {
+        "role": "primary",
+        "displayName": "Evergreen Tint",
+        "tonalRamp": [
+          "oklch(15.00% 0.01242 157.00)",
+          "oklch(26.43% 0.01242 157.00)",
+          "oklch(37.86% 0.01242 157.00)",
+          "oklch(49.29% 0.01242 157.00)",
+          "oklch(60.71% 0.01242 157.00)",
+          "oklch(72.14% 0.01242 157.00)",
+          "oklch(83.57% 0.01242 157.00)",
+          "oklch(95.00% 0.01242 157.00)"
+        ]
+      },
+      "error": {
+        "role": "state",
+        "displayName": "Error Red",
+        "tonalRamp": [
+          "oklch(15.00% 0.13490 30.60)",
+          "oklch(26.43% 0.13490 30.60)",
+          "oklch(37.86% 0.13490 30.60)",
+          "oklch(49.29% 0.13490 30.60)",
+          "oklch(60.71% 0.13490 30.60)",
+          "oklch(72.14% 0.13490 30.60)",
+          "oklch(83.57% 0.13490 30.60)",
+          "oklch(95.00% 0.13490 30.60)"
+        ]
+      },
+      "error-tint": {
+        "role": "state",
+        "displayName": "Error Tint",
+        "tonalRamp": [
+          "oklch(15.00% 0.01513 37.88)",
+          "oklch(26.43% 0.01513 37.88)",
+          "oklch(37.86% 0.01513 37.88)",
+          "oklch(49.29% 0.01513 37.88)",
+          "oklch(60.71% 0.01513 37.88)",
+          "oklch(72.14% 0.01513 37.88)",
+          "oklch(83.57% 0.01513 37.88)",
+          "oklch(95.00% 0.01513 37.88)"
+        ]
+      },
+      "warning": {
+        "role": "state",
+        "displayName": "Warning Ochre",
+        "tonalRamp": [
+          "oklch(15.00% 0.09403 77.78)",
+          "oklch(26.43% 0.09403 77.78)",
+          "oklch(37.86% 0.09403 77.78)",
+          "oklch(49.29% 0.09403 77.78)",
+          "oklch(60.71% 0.09403 77.78)",
+          "oklch(72.14% 0.09403 77.78)",
+          "oklch(83.57% 0.09403 77.78)",
+          "oklch(95.00% 0.09403 77.78)"
+        ]
+      },
+      "warning-tint": {
+        "role": "state",
+        "displayName": "Warning Tint",
+        "tonalRamp": [
+          "oklch(15.00% 0.02650 87.85)",
+          "oklch(26.43% 0.02650 87.85)",
+          "oklch(37.86% 0.02650 87.85)",
+          "oklch(49.29% 0.02650 87.85)",
+          "oklch(60.71% 0.02650 87.85)",
+          "oklch(72.14% 0.02650 87.85)",
+          "oklch(83.57% 0.02650 87.85)",
+          "oklch(95.00% 0.02650 87.85)"
+        ]
+      },
+      "focus": {
+        "role": "state",
+        "displayName": "Focus Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.11888 253.48)",
+          "oklch(26.43% 0.11888 253.48)",
+          "oklch(37.86% 0.11888 253.48)",
+          "oklch(49.29% 0.11888 253.48)",
+          "oklch(60.71% 0.11888 253.48)",
+          "oklch(72.14% 0.11888 253.48)",
+          "oklch(83.57% 0.11888 253.48)",
+          "oklch(95.00% 0.11888 253.48)"
+        ]
+      },
+      "disabled-ink": {
+        "role": "neutral",
+        "displayName": "Disabled Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.02073 160.65)",
+          "oklch(26.43% 0.02073 160.65)",
+          "oklch(37.86% 0.02073 160.65)",
+          "oklch(49.29% 0.02073 160.65)",
+          "oklch(60.71% 0.02073 160.65)",
+          "oklch(72.14% 0.02073 160.65)",
+          "oklch(83.57% 0.02073 160.65)",
+          "oklch(95.00% 0.02073 160.65)"
+        ]
+      },
+      "disabled-ground": {
+        "role": "neutral",
+        "displayName": "Disabled Ground",
+        "tonalRamp": [
+          "oklch(15.00% 0.00509 145.54)",
+          "oklch(26.43% 0.00509 145.54)",
+          "oklch(37.86% 0.00509 145.54)",
+          "oklch(49.29% 0.00509 145.54)",
+          "oklch(60.71% 0.00509 145.54)",
+          "oklch(72.14% 0.00509 145.54)",
+          "oklch(83.57% 0.00509 145.54)",
+          "oklch(95.00% 0.00509 145.54)"
+        ]
+      },
+      "input-border": {
+        "role": "neutral",
+        "displayName": "Input Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.02608 158.81)",
+          "oklch(26.43% 0.02608 158.81)",
+          "oklch(37.86% 0.02608 158.81)",
+          "oklch(49.29% 0.02608 158.81)",
+          "oklch(60.71% 0.02608 158.81)",
+          "oklch(72.14% 0.02608 158.81)",
+          "oklch(83.57% 0.02608 158.81)",
+          "oklch(95.00% 0.02608 158.81)"
+        ]
+      },
+      "secondary-border": {
+        "role": "neutral",
+        "displayName": "Secondary Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.02810 155.75)",
+          "oklch(26.43% 0.02810 155.75)",
+          "oklch(37.86% 0.02810 155.75)",
+          "oklch(49.29% 0.02810 155.75)",
+          "oklch(60.71% 0.02810 155.75)",
+          "oklch(72.14% 0.02810 155.75)",
+          "oklch(83.57% 0.02810 155.75)",
+          "oklch(95.00% 0.02810 155.75)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Page Title",
+        "purpose": "The main page heading."
+      },
+      "headline": {
+        "displayName": "State Heading",
+        "purpose": "Result, empty, and pending states. Result headings reduce at responsive breakpoints."
+      },
+      "detail": {
+        "displayName": "Correction Prose",
+        "purpose": "Explanations and recovery guidance."
+      }
+    },
+    "shadows": [],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "background-color 150ms ease-out, color 150ms ease-out",
+        "purpose": "Button hover and state feedback."
+      },
+      {
+        "name": "drop-state",
+        "value": "background-color 150ms ease-out",
+        "purpose": "File drag feedback."
+      },
+      {
+        "name": "checking-spinner",
+        "value": "spin 1s linear infinite",
+        "purpose": "Checking feedback. Reduced-motion preferences disable animation."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "narrow-desktop-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-max",
+        "value": "740px"
+      }
+    ],
+    "focus": {
+      "outline": "3px solid var(--focus)",
+      "offset": "4px",
+      "findingSummaryOffset": "-4px"
+    },
+    "rampProvenance": "Tonal ramps are synthesized OKLCH panel aids from the current colors. They are not shipped CSS tokens.",
+    "assetProvenance": "No raster assets ship. Lato regular and bold are self-hosted with web/assets/OFL.txt. The logo and interface symbols use SVG.",
+    "evidence": {
+      "checkedAt": "2026-11-01",
+      "sources": [
+        "web/styles.css",
+        "web/index.html",
+        "web/app.js",
+        "web/checker.worker.js",
+        "web/assets/OFL.txt",
+        ".impeccable/review/desktop.png",
+        ".impeccable/review/mobile.png",
+        ".impeccable/review/pagination-focus.png"
+      ],
+      "limits": [
+        "Descriptive choices record this implementation, not user brand preferences.",
+        "The documenter did not rerun browser tests.",
+        "Component previews show native visual states. Application worker behavior is not embedded."
+      ]
+    }
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The main action uses evergreen fill and a clear label.",
+      "html": "<button class=\"ds-primary\" type=\"button\">Check invoice</button>",
+      "css": ".ds-primary { font-family: Lato, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 700; min-height: 44px; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease-out, color 150ms ease-out; padding: 10px 22px; border: 0; color: white; background: var(--green, #275c42); } .ds-primary:not(:disabled):hover { background: var(--green-hover, #1c4832); } .ds-primary:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; } .ds-primary:disabled { color: var(--disabled-ink, #68766e); background: var(--disabled-ground, #edf0ed); cursor: default; } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "A bordered action supports the primary choice.",
+      "html": "<button class=\"ds-secondary\" type=\"button\">Try a file with issues</button>",
+      "css": ".ds-secondary { font-family: Lato, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 700; min-height: 44px; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease-out, color 150ms ease-out; padding: 9px 16px; border: 1px solid var(--secondary-border, #9cafa2); color: var(--ink, #26352e); background: var(--surface, #fff); } .ds-secondary:not(:disabled):hover { background: var(--green-tint, #e8f1eb); border-color: var(--green, #275c42); } .ds-secondary:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; } .ds-secondary:disabled { color: var(--disabled-ink, #68766e); background: var(--disabled-ground, #edf0ed); cursor: default; } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }"
+    },
+    {
+      "name": "Text Button",
+      "kind": "button",
+      "refersTo": "button-text",
+      "description": "A low-emphasis action uses green text.",
+      "html": "<button class=\"ds-text\" type=\"button\">Clear file</button>",
+      "css": ".ds-text { font-family: Lato, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 700; min-height: 44px; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease-out, color 150ms ease-out; padding: 10px 7px; border: 0; background: transparent; color: var(--green, #275c42); } .ds-text:not(:disabled):hover { background: var(--green-tint, #e8f1eb); } .ds-text:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; } .ds-text:disabled { color: var(--disabled-ink, #68766e); background: var(--disabled-ground, #edf0ed); cursor: default; } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }"
+    },
+    {
+      "name": "Amount Input",
+      "kind": "input",
+      "refersTo": "amount-input",
+      "description": "A visible label and help text accompany the tolerance.",
+      "html": "<label class=\"ds-input-label\" for=\"ds-tolerance\">Amount tolerance</label><input class=\"ds-input\" id=\"ds-tolerance\" type=\"text\" inputmode=\"decimal\" value=\"0\" aria-describedby=\"ds-tolerance-help\" autocomplete=\"off\" spellcheck=\"false\"><p class=\"ds-input-help\" id=\"ds-tolerance-help\">Default: 0. A smaller difference becomes a warning when it falls within your tolerance.</p>",
+      "css": ".ds-input-label { display: block; font: 14px/1.5 Lato, sans-serif; color: var(--ink, #26352e); margin-bottom: 7px; } .ds-input { display: block; width: 100%; font: 16px/1.5 Lato, sans-serif; color: var(--ink, #26352e); background: white; border: 1px solid var(--input-border, #86988d); border-radius: 5px; padding: 10px 12px; caret-color: var(--green, #275c42); font-variant-numeric: tabular-nums; } .ds-input:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; } .ds-input[aria-invalid=\"true\"] { border-color: var(--error, #9e3b2d); } .ds-input-help { font: 13px/1.5 Lato, sans-serif; color: var(--muted, #5d6c63); margin: 8px 0 0; }"
+    },
+    {
+      "name": "Findings Filters",
+      "kind": "nav",
+      "refersTo": "filter",
+      "description": "Pressed-state buttons filter the current report.",
+      "html": "<div class=\"ds-filters\" role=\"group\" aria-label=\"Filter findings\"><button type=\"button\" aria-pressed=\"true\">All <span>2</span></button><button type=\"button\" aria-pressed=\"false\">Errors <span>2</span></button><button type=\"button\" aria-pressed=\"false\">Warnings <span>0</span></button></div>",
+      "css": ".ds-filters { display: flex; gap: 4px; } .ds-filters button { font-family: Lato, sans-serif; font-size: 16px; line-height: 1.5; font-weight: 700; min-height: 44px; border-radius: 6px; cursor: pointer; transition: background-color 150ms ease-out, color 150ms ease-out; font-size: 13px; border: 0; padding: 9px 10px; color: var(--muted, #5d6c63); background: transparent; } .ds-filters button:hover { background: var(--ground, #f5f7f5); } .ds-filters button[aria-pressed=\"true\"] { background: var(--green-tint, #e8f1eb); color: var(--green, #275c42); } .ds-filters button:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; } .ds-filters span { margin-left: 4px; font-weight: 400; font-variant-numeric: tabular-nums; } @media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation: none !important; transition: none !important; } }"
+    },
+    {
+      "name": "Severity Labels",
+      "kind": "chip",
+      "refersTo": "severity-error",
+      "description": "Written labels accompany error and warning colors.",
+      "html": "<span class=\"ds-severity ds-error\">Error</span> <span class=\"ds-severity ds-warning\">Warning</span>",
+      "css": ".ds-severity { display: inline-block; font: 700 11px/1.5 Lato, sans-serif; padding: 3px 7px; border-radius: 4px; min-width: 47px; text-align: center; } .ds-error { color: var(--error, #9e3b2d); background: var(--error-tint, #faede9); } .ds-warning { color: var(--warning, #805b17); background: var(--warning-tint, #f8f0dd); }"
+    },
+    {
+      "name": "Review Sheet",
+      "kind": "card",
+      "refersTo": "review-sheet",
+      "description": "A flat container separates the report from the page.",
+      "html": "<section class=\"ds-sheet\" aria-label=\"Invoice review\"><div class=\"ds-sheet-top\"><span>Invoice review</span><span>LEDES 1998B</span></div><p class=\"ds-sheet-empty\">Nothing to resolve in the implemented checks.</p></section>",
+      "css": ".ds-sheet { background: var(--surface, #fff); color: var(--ink, #26352e); border: 1px solid var(--line, #d8e0da); border-radius: 10px; overflow: hidden; min-width: 0; font-family: Lato, sans-serif; } .ds-sheet-top { display: flex; justify-content: space-between; gap: 12px; padding: 18px 28px; border-bottom: 1px solid var(--line, #d8e0da); color: var(--muted, #5d6c63); font-size: 13px; line-height: 1.5; } .ds-sheet-top span:first-child { color: var(--ink, #26352e); font-weight: 700; } .ds-sheet-empty { margin: 0; padding: 32px 28px; color: var(--muted, #5d6c63); font-size: 14px; line-height: 1.5; } @media (max-width: 740px) { .ds-sheet-top { padding: 16px 20px; } }"
+    },
+    {
+      "name": "Finding Disclosure",
+      "kind": "custom",
+      "refersTo": "finding-summary",
+      "description": "Native disclosure keeps a correction beside its location.",
+      "html": "<details class=\"ds-issue\"><summary><span class=\"ds-issue-badge\">Error</span><span><span class=\"ds-issue-title\">Invalid date</span><span class=\"ds-issue-location\">Record 1 / Line 3</span></span></summary><div class=\"ds-issue-content\"><code class=\"ds-issue-field\">INVOICE_DATE</code><p>The date is not a valid calendar date.</p><h3>How to resolve it</h3><p>Use YYYYMMDD with a valid year, month and day.</p></div></details>",
+      "css": ".ds-issue { font-family: Lato, sans-serif; color: var(--ink, #26352e); border-bottom: 1px solid var(--line, #d8e0da); } .ds-issue > summary { display: flex; position: relative; gap: 14px; align-items: flex-start; list-style: none; cursor: pointer; min-height: 44px; padding: 20px 46px 20px 28px; } .ds-issue > summary::-webkit-details-marker { display: none; } .ds-issue > summary::after { content: \"\"; position: absolute; right: 28px; top: 29px; width: 7px; height: 7px; border-right: 1.5px solid var(--muted, #5d6c63); border-bottom: 1.5px solid var(--muted, #5d6c63); transform: rotate(45deg); } .ds-issue[open] > summary::after { transform: rotate(225deg); top: 33px; } .ds-issue > summary:hover { background: #f8faf8; } .ds-issue > summary:focus-visible { outline: 3px solid var(--focus, #356eaf); outline-offset: 4px; outline-offset: -4px; } .ds-issue-badge { color: var(--error, #9e3b2d); background: var(--error-tint, #faede9); font-size: 11px; line-height: 1.5; font-weight: 700; padding: 3px 7px; border-radius: 4px; margin-top: 1px; min-width: 47px; text-align: center; } .ds-issue-title { display: block; font-size: 15px; line-height: 1.5; font-weight: 700; overflow-wrap: anywhere; } .ds-issue-location { display: block; font-size: 12px; line-height: 1.5; color: var(--muted, #5d6c63); margin-top: 6px; } .ds-issue-content { padding: 0 28px 24px 89px; font-size: 14px; line-height: 1.65; overflow-wrap: anywhere; } .ds-issue-content p { margin: 0; max-width: 68ch; } .ds-issue-content h3 { font-size: 15px; margin: 20px 0 6px; } .ds-issue-field { display: block; font-size: 11px; color: var(--green, #275c42); margin-bottom: 14px; } @media (max-width: 740px) { .ds-issue > summary { padding: 18px 35px 18px 18px; gap: 10px; } .ds-issue > summary::after { right: 19px; } .ds-issue-content { padding: 0 20px 22px; } }"
+    }
+  ],
+  "narrative": {
+    "northStar": "Working Review Sheet",
+    "overview": "This system uses a pale mineral ground, white work surfaces, evergreen actions, and graphite text. It gives invoice findings a restrained, readable hierarchy.\n\nThese are implementation choices for the local preview, not confirmed user brand preferences. The working name is billcheck. Final branding remains undecided.\n\nChecked now on 2026-11-01 against the stylesheet, markup, interaction code, and refreshed review captures. The implementation is the source for every recorded token.",
+    "keyCharacteristics": [
+      "One self-hosted sans-serif family for headings, controls, and prose.",
+      "Flat surfaces with fine rules and restrained corner rounding.",
+      "Issue severity appears through words, icons, and color.",
+      "Native disclosures expose detail within a stable reading order."
+    ],
+    "rules": [
+      {
+        "name": "The State Meaning Rule",
+        "body": "Green identifies actions and passing results. Red identifies errors. Ochre identifies warnings. Visible words preserve these meanings without color.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Text Voice Rule",
+        "body": "Lato carries headings, prose, and controls. Monospace identifies field names, diagnostic codes, and reported values.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Surface Rule",
+        "body": "Fine borders and changes in surface tone separate content. The current interface uses no shadows.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do retain visible keyboard focus and the existing minimum control height.",
+      "Do pair severity color with a written label and a distinct status icon.",
+      "Do keep correction prose readable while long file names and reported values wrap.",
+      "Do preserve self-hosted fonts and the reduced-motion override.",
+      "Do keep synthetic examples labeled and passing results qualified."
+    ],
+    "donts": [
+      "Don't imply that a passing check guarantees portal acceptance.",
+      "Don't replace native disclosure or button semantics with decorative containers.",
+      "Don't apply the small reference-code size to general body copy.",
+      "Don't turn this preview's implementation choices into claims about the user's brand preferences."
+    ]
+  }
+}
